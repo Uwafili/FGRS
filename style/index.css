@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: white;
+    color: #333;
+}
+#container{
+    width: auto;
+    height: 500vh;
+    margin: 0;
+    padding: 0;
+}
+.min_tex{
+    width: auto;
+    height: 70vh;
+    background-color: white;
+    margin: 0;
+    padding:0px;
+}
+.min_tex_1{
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.child h1{
+    font-family: Antonio;
+    color: black;
+    font-size: 3.1em;
+    width: 100%;
+}
+.child p{
+    font-family: Bree Serif;
+    color: black;
+    font-size: 15px;
+    width: 100%;
+}
+.child img{ 
+    width: 60vw;
+  margin-right: 40px;
+}
+#about{
+    width: auto;
+    background-color: gold;
+    height: fit-content;
+    padding: 10px;
+}
