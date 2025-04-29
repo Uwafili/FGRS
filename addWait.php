@@ -1,8 +1,6 @@
 <?php
 
-
 require_once 'config.php';
-
 
 function validateEmail() {
 global $connect;
