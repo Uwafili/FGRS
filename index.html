@@ -44,10 +44,10 @@
         <a href="#faqs" class="hover:text-gold transition duration-300">FAQs</a>
         <a href="#contact" class="hover:text-gold transition duration-300">Contact</a>
       </div>
-      <div class="md:hidden">
-        <button id="menu-btn">
-          <svg class="h-8 w-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+      <div class="md:hidden ming">
+        <button id="menu-btn" class="ming">
+          <svg class="h-8 w-8 ming" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path class="ming" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
               d="M4 6h16M4 12h16M4 18h16"></path>
           </svg>
         </button>
@@ -55,7 +55,7 @@
     </div>
   
     <!-- Mobile menu -->
-    <div id="mobile-menu" class="hidden md:hidden bg-black text-white space-y-2 p-4">
+    <div id="mobile-menu" class="hidden md:hidden bg-black text-white space-y-2 p-4 mnb">
       <a href="#home" class="block hover:text-gold transition duration-300">Home</a>
       <a href="#about" class="block hover:text-gold transition duration-300">About</a>
       <a href="#keyfeatures" class="block hover:text-gold transition duration-300">Key Features</a>
@@ -255,6 +255,19 @@
         console.log(data);
     })
  })
+
+ const menu=document.querySelector("#menu-btn")
+ menu.addEventListener("click",()=>{
+  console.log("helko")
+  menu.removeChild()
+ })
+
+ window.onclick=function(e){
+  console.log(e.target.classList)
+  if (!e.target.classList.contains("ming")) {
+    document.querySelector(".mnb").classList.toggle("hidden");
+  }
+ }
 </script>
 
 </body>
